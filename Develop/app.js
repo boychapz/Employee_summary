@@ -66,8 +66,8 @@ function makeManager() {
       },
       {
         type: "input",
-        name: "officeLocation",
-        message: "Enter the office location"
+        name: "officeNumber",
+        message: "Enter the office Number"
       }
     ])
     .then(function(answers) {
@@ -76,7 +76,7 @@ function makeManager() {
         answers.managerName,
         answers.managerID,
         answers.managerEmail,
-        answers.officeLocation
+        answers.officeNumber
       );
       console.log(manager);
       employeeTeam.push(manager);
